@@ -69,6 +69,13 @@ namespace assign3_triangle
             return answer;
         }
 
+        public double getAngle(double angleA, double angleB)
+        {
+            double answer = 0;
 
+            answer = 180 - (angleA + angleB);
+
+            return answer;
+        }
     }
 }
