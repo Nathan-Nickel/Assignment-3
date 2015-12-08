@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace assign3_triangle
 {
-    class Triangle
+    public class Triangle
     {
         public Triangle()
         {

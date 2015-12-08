@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "assign3-triangle", "assign3-triangle\assign3-triangle.csproj", "{07DB6129-8224-4988-86F7-D8833720F6AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleTests", "TriangleTests\TriangleTests.csproj", "{59BAD43C-47D6-419F-96AB-C7DBBA6F2E7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{07DB6129-8224-4988-86F7-D8833720F6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07DB6129-8224-4988-86F7-D8833720F6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07DB6129-8224-4988-86F7-D8833720F6AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59BAD43C-47D6-419F-96AB-C7DBBA6F2E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59BAD43C-47D6-419F-96AB-C7DBBA6F2E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59BAD43C-47D6-419F-96AB-C7DBBA6F2E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59BAD43C-47D6-419F-96AB-C7DBBA6F2E7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
