@@ -21,7 +21,15 @@ namespace assign3_triangle
             }
             else
             {
-                answer = Math.Sqrt((sideA * sideA) + (sideB * sideB));
+                if (sideA >= 0)
+                {
+
+                        answer = Math.Sqrt((sideA * sideA) + (sideB * sideB));
+                }
+                else
+                {
+                    throw new InvalidSideException("first input was less than 0: " + sideA);
+                }
             }
             
 
