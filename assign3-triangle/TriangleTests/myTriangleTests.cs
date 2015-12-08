@@ -214,5 +214,17 @@ namespace TriangleTests
 
             Assert.IsTrue(answer == expectedAngle);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidSideException), "inputs did not add up to at least 90: 0, 0")]
+        public void zeroTestAangle()
+        {
+            double answer = 0;
+            double angleA = 0;
+            double angleB = 0;
+
+            Triangle myTri = new Triangle();
+            answer = myTri.getAngle(angleA, angleB);
+        }
     }
 }
