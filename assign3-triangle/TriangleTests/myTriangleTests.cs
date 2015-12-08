@@ -75,5 +75,25 @@ namespace TriangleTests
 
             Assert.IsTrue(threwException == "first input was less than 0: " + sideA && answer == 0);
         }
+
+        [TestMethod]
+        public void secondBadTestHypotenuse()
+        {
+            double answer = 0;
+            double sideA = 5;
+            double sideB = -3;
+            string threwException = "";
+            try
+            {
+                Triangle myTri = new Triangle();
+                answer = myTri.getHypotenuse(sideA, sideB);
+            }
+            catch (Exception ex)
+            {
+                threwException = ex.Message;
+            }
+
+            Assert.IsTrue(threwException == "second input was less than 0: " + sideB && answer == 0);
+        }
     }
 }
