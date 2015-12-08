@@ -46,7 +46,14 @@ namespace assign3_triangle
         {
             double answer = 0;
 
-            answer = (sideA * sideB) * .5;
+            if (sideA >= 0)
+            {
+                answer = (sideA * sideB) * .5;
+            }
+            else
+            {
+                throw new InvalidSideException("first input was less than 0: " + sideA);
+            }
 
             return answer;
         }
