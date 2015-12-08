@@ -46,6 +46,10 @@ namespace assign3_triangle
         {
             double answer = 0;
 
+            if (sideA < 0 && sideB < 0)
+            {
+                throw new InvalidSideException("both inputs were less than 0: " + sideA + ", " + sideB);
+            }
             if (sideA >= 0)
             {
                 if (sideB >= 0)
@@ -64,6 +68,7 @@ namespace assign3_triangle
 
             return answer;
         }
+
 
     }
 }
