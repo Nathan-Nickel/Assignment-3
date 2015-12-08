@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace assignment_3
+namespace assign3_triangle
 {
     public class InvalidSideException : Exception
     {

@@ -15,8 +15,15 @@ namespace assign3_triangle
         public double getHypotenuse(double sideA, double sideB)
         {
             double answer = 0;
-    
-            answer = Math.Sqrt((sideA * sideA) + (sideB * sideB));
+            if (sideA < 0 && sideB < 0)
+            {
+                throw new InvalidSideException("both inputs were less than 0: " + sideA + ", " + sideB);
+            }
+            else
+            {
+                answer = Math.Sqrt((sideA * sideA) + (sideB * sideB));
+            }
+            
 
             return answer;
         }
