@@ -95,5 +95,22 @@ namespace TriangleTests
 
             Assert.IsTrue(threwException == "second input was less than 0: " + sideB && answer == 0);
         }
+
+        //getArea
+        [TestMethod]
+        public void goodTestArea()
+        {
+            double answer = 0;
+            double sideA = 5;
+            double sideB = 3;
+            double expectedArea = 0;
+
+            Triangle myTri = new Triangle();
+            answer = myTri.getArea(sideA, sideB);
+
+            expectedArea = (sideA * sideB) * .5;
+
+            Assert.IsTrue(answer == expectedArea);
+        }
     }
 }
