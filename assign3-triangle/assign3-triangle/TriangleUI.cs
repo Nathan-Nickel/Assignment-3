@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace assign3_triangle
 {
-    public partial class Form1 : Form
+    public partial class TriangleUI : Form
     {
-        public Form1()
+        public TriangleUI()
         {
             InitializeComponent();
         }

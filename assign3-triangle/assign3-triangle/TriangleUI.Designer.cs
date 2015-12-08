@@ -1,6 +1,6 @@
 ﻿namespace assign3_triangle
 {
-    partial class Form1
+    partial class TriangleUI
     {
         /// <summary>
         /// Required designer variable.

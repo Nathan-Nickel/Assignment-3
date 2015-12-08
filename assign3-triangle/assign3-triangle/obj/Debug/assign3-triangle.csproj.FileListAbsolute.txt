@@ -1,1 +1,2 @@
 C:\Users\Nathan\OneDrive\Software Quality 1\assign 3\assign3-triangle\assign3-triangle\bin\Debug\assign3-triangle.exe.config
+C:\Users\Nathan\OneDrive\Software Quality 1\assign 3\Assignment-3.git\trunk\assign3-triangle\assign3-triangle\bin\Debug\assign3-triangle.exe.config
