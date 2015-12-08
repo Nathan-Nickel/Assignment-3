@@ -250,5 +250,17 @@ namespace TriangleTests
             Triangle myTri = new Triangle();
             answer = myTri.getAngle(angleA, angleB);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidSideException), "inputs did not add up to at least 90: -50, -47")]
+        public void boothBadTestAangle()
+        {
+            double answer = 0;
+            double angleA = -50;
+            double angleB = -47;
+
+            Triangle myTri = new Triangle();
+            answer = myTri.getAngle(angleA, angleB);
+        }
     }
 }
