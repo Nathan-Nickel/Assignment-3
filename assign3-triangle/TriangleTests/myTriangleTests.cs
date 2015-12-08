@@ -35,5 +35,25 @@ namespace TriangleTests
 
             Assert.IsTrue(answer == estimatedAnswer);
         }
+
+        [TestMethod]
+        public void boothBadTestHypotenuse()
+        {
+            double answer = 0;
+            double sideA = -5;
+            double sideB = -3;
+            string threwException = "";
+            try
+            {
+                Triangle myTri = new Triangle();
+                answer = myTri.getHypotenuse(sideA, sideB);
+            }
+            catch (Exception ex)
+            {
+                threwException = ex.Message;
+            }
+
+            Assert.IsTrue(threwException == "both inputs were less than 0: " + sideA + ", " + sideB && answer == 0);
+        }
     }
 }
