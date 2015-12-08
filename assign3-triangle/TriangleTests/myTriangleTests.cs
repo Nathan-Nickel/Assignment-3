@@ -112,5 +112,21 @@ namespace TriangleTests
 
             Assert.IsTrue(answer == expectedArea);
         }
+
+        [TestMethod]
+        public void zeroTestArea()
+        {
+            double answer = 0;
+            double sideA = 0;
+            double sideB = 0;
+            double expectedArea = 0;
+
+            Triangle myTri = new Triangle();
+            answer = myTri.getArea(sideA, sideB);
+
+            expectedArea = (sideA * sideB) * .5;
+
+            Assert.IsTrue(answer == expectedArea);
+        }
     }
 }
