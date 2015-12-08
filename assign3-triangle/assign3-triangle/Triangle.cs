@@ -73,7 +73,14 @@ namespace assign3_triangle
         {
             double answer = 0;
 
-            answer = 180 - (angleA + angleB);
+            if ((angleA + angleA) < 90)
+            {
+                throw new InvalidSideException("inputs did not add up to at least 90: " + angleA + ", " + angleB);
+            }
+            else
+            {
+                answer = 180 - (angleA + angleB);
+            }
 
             return answer;
         }
