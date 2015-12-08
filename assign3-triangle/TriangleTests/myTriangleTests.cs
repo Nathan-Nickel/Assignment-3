@@ -21,5 +21,19 @@ namespace TriangleTests
 
             Assert.IsTrue(answer == estimatedAnswer);
         }
+
+        [TestMethod]
+        public void zeroTestHypotenuse()
+        {
+            double answer = 0;
+            double sideA = 0;
+            double sideB = 0;
+            double estimatedAnswer = 0;
+            Triangle myTri = new Triangle();
+            answer = myTri.getHypotenuse(sideA, sideB);
+            estimatedAnswer = Math.Sqrt((sideA * sideA) + (sideB * sideB));
+
+            Assert.IsTrue(answer == estimatedAnswer);
+        }
     }
 }
