@@ -23,8 +23,14 @@ namespace assign3_triangle
             {
                 if (sideA >= 0)
                 {
-
+                    if (sideB >= 0)
+                    {
                         answer = Math.Sqrt((sideA * sideA) + (sideB * sideB));
+                    }
+                    else
+                    {
+                        throw new InvalidSideException("second input was less than 0: " + sideB);
+                    }
                 }
                 else
                 {
