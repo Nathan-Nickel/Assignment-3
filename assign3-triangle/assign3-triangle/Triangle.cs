@@ -42,5 +42,14 @@ namespace assign3_triangle
             return answer;
         }
 
+        public double getArea(double sideA, double sideB)
+        {
+            double answer = 0;
+
+            answer = (sideA * sideB) * .5;
+
+            return answer;
+        }
+
     }
 }
