@@ -8,5 +8,18 @@ namespace assign3_triangle
 {
     class Triangle
     {
+        public Triangle()
+        {
+
+        }
+        public double getHypotenuse(double sideA, double sideB)
+        {
+            double answer = 0;
+    
+            answer = Math.Sqrt((sideA * sideA) + (sideB * sideB));
+
+            return answer;
+        }
+
     }
 }
