@@ -197,5 +197,22 @@ namespace TriangleTests
 
             Assert.IsTrue(threwException == "both inputs were less than 0: " + sideA + ", " + sideB && answer == 0);
         }
+
+        //getMissingAngle
+        [TestMethod]
+        public void goodTestAangle()
+        {
+            double answer = 0;
+            double angleA = 50;
+            double angleB = 47;
+            double expectedAngle = 0;
+
+            Triangle myTri = new Triangle();
+            answer = myTri.getAngle(angleA, angleB);
+
+            expectedAngle = 180 - (angleA + angleB);
+
+            Assert.IsTrue(answer == expectedAngle);
+        }
     }
 }
