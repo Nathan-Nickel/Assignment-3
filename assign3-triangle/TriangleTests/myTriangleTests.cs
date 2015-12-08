@@ -151,5 +151,28 @@ namespace TriangleTests
 
             Assert.IsTrue(threwException == "first input was less than 0: " + sideA && answer == 0);
         }
+
+        [TestMethod]
+        public void secondBadTestArea()
+        {
+            double answer = 0;
+            double sideA = 5;
+            double sideB = -3;
+            string threwException = "";
+
+            Triangle myTri = new Triangle();
+
+
+            try
+            {
+                answer = myTri.getArea(sideA, sideB);
+            }
+            catch (Exception ex)
+            {
+                threwException = ex.Message;
+            }
+
+            Assert.IsTrue(threwException == "second input was less than 0: " + sideB && answer == 0);
+        }
     }
 }
